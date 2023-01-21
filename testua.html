@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="ico//images.ico" type="ico/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Оцінка самопочуття людини</title>
+  <style>
+      h5{
+        font-weight:bold
+      }
+    label{
+  color: black;
+    }
+    </style>
+</head>
+
+<body style="background-image: url(img/fon.png)">
+<!--   <div class="right">
+Приветствую вас, <span id="hello">Гость</span>
+<br>
+<form name="frm">
+<input type="text" name="fio" title="Введите ваше имя">
+<input type="button" class="waves-effect waves-light btn" value="Ввести имя"  onclick="document.getElementById('hello').innerHTML = document.frm.fio.value">
+</form>
+  </div> -->
+
+  
+  <nav>
+      <div class="nav-wrapper" style="background-color: #26a69a;">
+        <a href="#" class="brand-logo right"><i class="material-icons">nature_people</i>TestOnline</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="indexua.html" title="Головна">Головна</a></li>
+            <li><a href="testua.html" title="Основи першої медичної допомоги">Тест 1</a></li>
+            <li><a href="test1ua.html" title="Простий тест на загальну фізичну підготовку (ОФП)">Тест 2</a></li>
+        </ul>
+        <ul id="slide-out" class="sidenav" style="background-color: #26a69a;">
+            <li><a class="waves-effect" href="indexua.html" title="Головна"><span style="color: white;" >Головна</span></a></li>
+            <li><a class="waves-effect" href="testua.html" title="Основи першої медичної допомоги"><span style="color: white;" >Тест 1</span></a></li>
+            <li><a class="waves-effect" href="test1ua.html" title="Простий тест на загальну фізичну підготовку (ОФП)"><span style="color: white;" >Тест 2</span></a></li>
+            <li><a class="sidenav-close waves-effect" href="#!"><span style="color: white;" >close</span></a></li>
+       </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+        <div class="container">
+    <h3 class="center"><font color="#26a69a">Оцінка самопочуття людини</font></h3>
+    <form>
+      <h5>
+        Оберіть ситуацію яку 
+
+
+         
+      </h5>
+     <h5> В якому стані знаходиться людина? </h5>
+      <p>
+        <label>
+          <input name="myname" type="radio" class="with-gap" value="10"/>
+          <span onclick="document.getElementById('500').style.display = ''; document.getElementById('12345').style.display = '';">в свідомості</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname" type="radio" class="with-gap" value="5"/>
+          <span onclick="document.getElementById('500').style.display = 'none'; document.getElementById('12345').style.display = 'none';">без свідомості</span>
+        </label>
+      </p>
+      <br>
+      <h5>Чи є в людини відкриті рани? </h5>
+      <p>
+        <label>
+          <input name="myname1" type="radio" class="with-gap" value="2"/>
+          <span onclick="document.getElementById('100200').style.display = '';">Так</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname1" type="radio" class="with-gap" value="30"/>
+          <span onclick="document.getElementById('100200').style.display = 'none';">Ні</span>
+        </label> 
+      </p>
+      <p>
+        <label>
+          <input class="with-gap" name="myname1" type="radio" value="8"/>
+          <span onclick="document.getElementById('100200').style.display = 'none';">Не можно побачити</span>
+        </label>
+      </p>
+      <br>
+      <div id="500">
+      <h5>Покличте людину, чи реагує вона на ваші кликання ? </h5>
+      <p>
+        <label>
+          <input name="myname2" type="radio" class="with-gap" value="4"/>
+          <span onclick="document.getElementById('12345').style.display = '';">Так</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname2" type="radio" class="with-gap" value="10"/>
+          <span onclick="document.getElementById('12345').style.display = 'none';">Ні</span>
+        </label> 
+      </p>
+      <br>
+      </div>
+      <h5>Прикладіть руку на сонну артерію, чи чуєте ви пульс? </h5>
+      <p>
+        <label>
+          </a><input name="myname3" type="radio" class="with-gap" value="10"/>
+        <span onclick="document.getElementById('1111115').style.display = '';">
+        Так
+        </span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname3" type="radio" name="qwerty" class="with-gap" value="3"/>
+          <span onclick="document.getElementById('1111115').style.display = 'none';">
+         Ні
+          </span>
+        </label> 
+      </p>
+      <br>
+      <div id="1111115">
+      <h5>Візьміть годинник в одну руку та нарахуйте кількість ударів за 30 секунд?   </h5>
+      <p>
+        <label>
+          <input name="myname4" type="radio" class="with-gap" value="4"/>
+          <span>>45</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname4" type="radio" class="with-gap" value="4"/>
+          <span><30 </span>
+        </label> 
+      </p>
+      <p>
+        <label>
+          <input class="with-gap" name="myname4" type="radio" value="10"/>
+          <span>30-45</span>
+        </label>
+      </p>
+      <br>
+      </div>
+      <div id=100200>
+      <h5>Чи є в рані антитіло?  </h5>
+      <p>
+        <label>
+          <input name="myname5" type="radio" class="with-gap" value="3"/>
+          <span>Так</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname5" type="radio" class="with-gap" value="7"/>
+          <span>Ні</span>
+        </label> 
+      </p>
+      <br>
+        <h5>Чи кровоточить рана?  </h5>
+        <p>
+          <label>
+            <input name="myname9" type="radio" class="with-gap" value="3"/>
+            <span>Так</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="myname9" type="radio" class="with-gap" value="7"/>
+            <span>Ні</span>
+          </label> 
+        </p>
+        <br>
+      </div>
+      <div id="12345">
+      <h5>Подивіться йому в очі, які вони?</h5>
+      <p>
+        <label>
+          <input name="myname6" type="radio" class="with-gap" value="6"/>
+          <span>Червоні</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname6" type="radio" class="with-gap" value="10"/>
+          <span>Звичайні</span>
+        </label> 
+      </p>
+      <br>
+     
+      <h5>Стан людини:</h5>
+      <p>
+        <label>
+          <input name="myname7" type="radio" class="with-gap" value="10"/>
+          <span>Спокійний</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname7" type="radio" class="with-gap" value="7"/>
+          <span>Стривожений</span>
+        </label> 
+      </p>
+      <p>
+        <label>
+          <input class="with-gap" name="myname7" type="radio" value="8"/>
+          <span>Розслаблений</span>
+        </label>
+      </p>
+      <h5>Запитайте у людини чи добре вона себе почуває.</h5>
+      <p>
+        <label>
+          <input name="myname8" type="radio" class="with-gap" value="10"/>
+          <span>Дуже добре</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname8" type="radio" class="with-gap" value="5"/>
+          <span>Погано</span>
+        </label> 
+      </p>
+      <p>
+          <label>
+            <input name="myname8" type="radio" class="with-gap" value="8"/>
+            <span>Добре</span>
+          </label> 
+        </p>
+        <p>
+            <label>
+              <input name="myname8" type="radio" class="with-gap" value="3"/>
+              <span>Жахливо</span>
+            </label> 
+          </p>
+      <br>
+	        <h5>Що відчуває людина?</h5>
+			      <p>
+        <label>
+          <input name="myname10" type="radio" class="with-gap" value="10"/>
+          <span>Звичайний </span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname10" type="radio" class="with-gap" value="4"/>
+          <span>Головний біль</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname10" type="radio" class="with-gap" value="6"/>
+          <span>Серцебиття</span>
+        </label> 
+      </p>
+      <p>
+          <label>
+            <input name="myname10" type="radio" class="with-gap" value="7"/>
+            <span>Запаморочення</span>
+          </label> 
+        </p>
+		      <p>
+          <label>
+            <input name="myname10" type="radio" class="with-gap" value="6"/>
+            <span>Тремор</span>
+          </label> 
+        </p>
+		      <p>
+          <label>
+            <input name="myname10" type="radio" class="with-gap" value="4"/>
+            <span>Біль у шлунку або грудях</span>
+          </label> 
+        </p>
+		</div>
+      <br>
+	 
+      <p>
+        <input  type="button" class="waves-effect waves-light btn"  id="calc" value="Підрахувати результати"  onload="move()">
+        <input type="reset" onclick="myBar.style.width = 0"  class="waves-effect waves-light btn" value="Скинути">
+      </p>
+      <span style="font-weight:bold"><h3>Разом балів:</h3></span> <input type="text" name="result" readonly>
+      <span style="font-weight:bold"><h4>Рекомендація</h4></span> <input type="text" name="resultb" readonly>
+              <div class="progress"><h4 color="blue">Діаграма</h4>
+            <div title="" class="determinate" style="width:0;" id="myBar"></div>
+        </div>
+      
+
+    </form>
+    <script>
+    calc.onclick = function(){
+    var myform = this.form;
+    myform.result.value = +myform.myname.value + +myform.myname1.value + +myform.myname2.value + +myform.myname3.value + +myform.myname4.value + +myform.myname5.value + +myform.myname6.value + +myform.myname7.value + +myform.myname8.value + +myform.myname9.value + +myform.myname10.value + "%";
+    myBar.style.width = myform.result.value
+    myBar.title = myform.result.value
+    var w = myform.result.value
+    M.toast({html: 'Самопочуття людини у відсотках: ' + w })
+  if (w=>80){
+  myform.resultb.value = "Все добре";
+  this.style.color = "green";
+  }
+  if (w=>60 & w<=80){
+  myform.resultb.value = "Вам бажано звернутися до лікаря";
+  this.style.color = "yellow";
+  }
+  if (w=>40 & w<=60){
+  myform.resultb.value = "Вам обов`язково треба звернутися до лікаря";
+  this.style.color = "orange";
+  }
+  if (w<=40){
+  myform.resultb.value = "Вам терміново треба звернутися до лікаря";
+  this.style.color = "red";
+  }
+    }
+  </script>
+  </div>
+  <footer class="page-footer" style="background-color: #26a69a;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Інформація</h5>
+                <p class="grey-text text-lighten-4">   На даний час ми пропонуємо тести з двох тематик. Є мобільна версія цього сайту. Якщо ви бажаєте додати свої матеріали, зателефонуйте на номер +380502250948, або відішліть матеріали нам на пошту tstonlninfo@gmail.com . Користуйтесь!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Посилання</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="indexua.html">Головна</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#"> Тест 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="test1ua.html">Тест 2</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+          <a class="waves-effect waves-light btn right modal-trigger" href="#modal1">RU</a>
+            <a class="waves-light btn right" href="#">UA  </a>
+            </div>
+          </div>
+        </footer>
+      
+        <script src="js/jquery-3.2.1.min.js"></script>
+ <script src="js/materialize.js"></script>
+ <script src="js/nav_m.js"></script>
+ <script src="js/gallery.js"></script>
+  <script src="js/dialog.js"></script>
+  <script src="js/materialize.min.js"></script>
+ <script src="js/parallax.js"></script>
+          <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 class="red center">Увага!</h4>
+      <p ><i class="material-icons">mood_bad</i>Нажаль перекладу цієї сторінки немає</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">ОК</a>
+    </div>
+  </div>
+            
+</body>
+
+</html>

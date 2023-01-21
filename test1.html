@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="ico//images.ico" type="ico/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style (2).css">
+  <title>Простой тест на общую физическую подготовку (ОФП)</title>
+  <style>
+    h5{
+      font-weight:bold
+    }
+  label{
+color: black;
+  }
+  </style>
+</head>
+
+<body onload="gallery()" style="background-image: url(img/fon.png)">
+<!--   <div class="right">
+Приветствую вас, <span id="hello">Гость</span>
+<br>
+<form name="frm">
+<input type="text" name="fio" title="Введите ваше имя">
+<input type="button" class="waves-effect waves-light btn" value="Ввести имя"  onclick="document.getElementById('hello').innerHTML = document.frm.fio.value">
+</form>
+  </div> -->
+
+  
+  <nav>
+      <div class="nav-wrapper " style="background-color: #26a69a;">
+        <a href="#" class="brand-logo right"><i class="material-icons">nature_people</i>TestOnline</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="index.html" title="Главная">Главная</a></li>
+          <li><a class="waves-effect waves-light right modal-trigger" href="#modal2">Тест 1</a></li>
+          <li><a href="test1.html" title="Простой тест на общую физическую подготовку (ОФП)">Тест 2</a></li>
+        </ul>
+        <ul id="slide-out" class="sidenav" style="background-color: #26a69a;">
+          <li><a class="waves-effect" href="index.html" title="Головна"><span style="color: white;" >Главная</span></a></li>
+          <li><a class="waves-effect waves-light modal-trigger" href="#modal2"><span style="color: white;" >Тест 1</span></a></li>
+          <li><a class="waves-effect" href="test1.html" title="Простий тест на загальну фізичну підготовку (ОФП)"><span style="color: white;" >Тест 2</span></a></li>
+          <li><a class="sidenav-close waves-effect" href="#!"><span style="color: white;" >close</span></a></li>
+     </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+        <div class="container">
+    <h3 class="center"><font color="#26a69a">Простой тест на общую физическую подготовку (ОФП)</font></h3>
+    <form>
+     <h5> 1.Сколько раз вы можете отжатся от пола? </h5>
+     <div id="gallery">
+				<a title="Отжимания" class="img" href="img/1.jpg"><img height="100" src="img/1.jpg"></a>
+			</div>
+      <p>
+        <label>
+        
+          <input name="myname" type="radio" class="with-gap" value="20"/>
+          <span>40-60</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname" type="radio" class="with-gap" value="13"/>
+          <span>20-40</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input class="with-gap" name="myname" type="radio" value="5"/>
+          <span>1-20</span>
+        </label>
+      </p>
+
+      <h5>2.Сколько раз вы можете присесть не отрывая пяток от пола? </h5>
+      <div id="gallery">
+          <a title="Приседания" class="img" href="img/2.jpg"><img height="100" src="img/2.jpg"></a>
+        </div>
+      <p>
+        <label>
+          <input name="myname1" type="radio" class="with-gap" value="20"/>
+          <span>50-80</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname1" type="radio" class="with-gap" value="15"/>
+          <span>30-50</span>
+        </label> 
+      </p>
+      <p>
+        <label>
+          <input class="with-gap" name="myname1" type="radio" value="5"/>
+          <span>1-30</span>
+        </label>
+      </p>
+      <h5>3.Сколько минут вы можете простоять в планке?  </h5>
+      <div id="gallery">
+          <a title="Приседания" class="img" href="img/3.jpg"><img height="100" src="img/3.jpg"></a>
+        </div>
+      <p>
+        <label>
+          <input name="myname2" type="radio" class="with-gap" value="20"/>
+          <span>от 1мин 30сек до 2мин и больше</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname2" type="radio" class="with-gap" value="14"/>
+          <span>то 30сек до 1мин 30сек</span>
+        </label> 
+      </p>
+      <p>
+        <label>
+          <input class="with-gap" name="myname2" type="radio" value="6"/>
+          <span>от 1сек до 30сек</span>
+        </label>
+      </p>
+      <h5>4.Упражнение стульчик, сколько минут вы можете простоять в упражнении стульчик?   </h5>
+      <div id="gallery">
+          <a title="Приседания" class="img" href="img/4.jpg"><img height="100" src="img/4.jpg"></a>
+        </div>
+      <p>
+        <label>
+          <input name="myname3" type="radio" class="with-gap" value="20"/>
+          <span>от 1мин 30сек до 2мин и больше</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname3" type="radio" class="with-gap" value="14"/>
+          <span>от 30сек до 1мин 30сек</span>
+        </label> 
+      </p>
+      <p>
+        <label>
+          <input class="with-gap" name="myname3" type="radio" value="5"/>
+          <span>от 1сек до 30сек</span>
+        </label>
+      </p>
+      <h5>5.Сколько вы можете сделать упражнений пресс?   </h5>
+      <div id="gallery">
+          <a title="Приседания" class="img" href="img/5.jpg"><img height="100" src="img/5.jpg"></a>
+        </div>
+      <p>
+        <label>
+          <input name="myname4" type="radio" class="with-gap" value="20"/>
+          <span>>80</span>
+        </label>
+      </p>
+      <label>
+          <input name="myname4" type="radio" class="with-gap" value="15"/>
+          <span>50-80</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input name="myname4" type="radio" class="with-gap" value="10"/>
+          <span>30-50</span>
+        </label> 
+      </p>
+      <p>
+        <label>
+          <input class="with-gap" name="myname4" type="radio" value="5"/>
+          <span>1-30</span>
+        </label>
+      </p>
+      <p>
+        <input  type="button" class="waves-effect waves-light btn" style="color: white;" id="calc" value="Подсчитать результаты" onload="move()">
+        <input type="reset" onclick="myBar.style.width = 0"  class="waves-effect waves-light btn" style="font:solid white;" value="Сброс">
+      </p>
+              <div class="progress">
+            <div title="" class="determinate" style="width:0;" id="myBar"></div>
+        </div>
+        
+        <span style="font-weight:bold"><h3>Итого баллов:</h3></span> <input type="text" name="result" readonly>
+
+    </form>
+
+    <script>
+    calc.onclick = function(){
+    var myform = this.form;
+    myform.result.value = +myform.myname.value + +myform.myname1.value + +myform.myname2.value + +myform.myname3.value + +myform.myname4.value  + "%";
+    myBar.style.width = myform.result.value
+    myBar.title = myform.result.value
+    var w = myform.result.value
+    M.toast({html: 'Физподготовка человека в процентах: ' + w })
+    }
+  </script>
+  </div>  
+  <footer class="page-footer" style="background-color: #26a69a;">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Информация</h5>
+                <p class="grey-text text-lighten-4">Мы предлагаем вам пройти тест и получитьоценку вашего здоровья. Все онлайн, бесплатно и без регистрации На данный момент на сервисе присутствуют два опроса, но вскоре мы усовершенствуем сайт сделав его более удобным для пользования и добавив множество тестов. Если хотите добавить свои материалы обратитесь по номеру +380502250948, или отправьте их нам на почту tstonlninfo@gmail.com .  Пользуйтесь!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Ссылки</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="index.html">Главная</a></li>
+                  <li><a class=" waves-light modal-trigger" href="#modal2"><span style="color: white">Тест 1</span></a></li>
+                  <li><a class="grey-text text-lighten-3" href="test1.html">Тест 2</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="waves-light btn right"  href="#">RU  </a>
+            <a class="waves-light btn right" href="test1ua.html">UA  </a>
+            </div>
+          </div>
+        </footer>
+ 
+ 
+
+ <script src="js/jquery-3.2.1.min.js"></script>
+ <script src="js/materialize.js"></script>
+ <script src="js/nav_m.js"></script>
+ <script src="js/gallery.js"></script>
+  <script src="js/dialog.js"></script>
+  <script src="js/materialize.min.js"></script>
+ <script src="js/parallax.js"></script>
+                  <!-- Modal Structure -->
+                  <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h4 class="red center">Внимание!</h4>
+        <p ><i class="material-icons">mood_bad</i>Этой страницы не существует. Мы работаем над этим</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">ОК</a>
+      </div>
+    </div>
+</body>
+
+</html>
